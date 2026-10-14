@@ -1,7 +1,9 @@
+/* Configuración global de box-sizing */
 * {
   box-sizing: border-box;  
 }
 
+/* Estilos base de la página */
 body {
     margin: 0;
     padding: 0;
@@ -10,27 +12,32 @@ body {
     background-color: white;
 }
 
+/* Contenedor central del contenido */
 main {
     max-width: 1400px;
     margin: 0 auto;
 }
 
+/* Espaciado del encabezado */
 header {
     margin-bottom: 24px;
 }
 
+/* Título principal de la página */
 h1 {
     margin: 0 0 8px;
     font-size: clamp(24px, 4vm, 34px);
     color: #571010;
 }
 
+/* Texto descriptivo del encabezado */
 header p {
     margin: 0;
     color: #2E0101;
     line-height: 1.5;
 }
 
+/* Contenedor para permitir scroll horizontal */
 .tabla-contendor {
     overflow-x: auto;
     background: #4E7682;
@@ -39,11 +46,13 @@ header p {
     box-shadow: 0 8px 24px rgb(15 23 42 / 10%);
 }
 
+/* Foco accesible para el contenedor de la tabla */
 .tabla-contendor:focus-visible {
     outline: 3px solid blue;
     outline-offset: 4px;
 }
 
+/* Estructura general de la tabla */
 table {
     width: 100%;
     min-width: 1100px;
@@ -51,6 +60,7 @@ table {
     font-size: 14px;
 }
 
+/* Título superior interno de la tabla */
 caption {
     padding: 18px 20px;
     text-align: left;
@@ -58,6 +68,8 @@ caption {
     color: black;
     background: #0092B5;
 }
+
+/* Primer nivel de encabezados de la tabla */
 thead th {
     padding: 16px 12px;
     color: white;
@@ -66,10 +78,13 @@ thead th {
     text-align: center;
     line-height: 1.4;
 }
+
+/* Segundo nivel de encabezados (subtítulos de meses) */
 thead tr:nth-child(2) th {
-background: #3BDBFF;
+    background: #3BDBFF;
 }
 
+/* Celdas de datos y texto del cuerpo de la tabla */
 tbody td, tbody th {
     padding: 16px 12px;
     border-bottom: 0px solid white;
@@ -78,18 +93,22 @@ tbody td, tbody th {
     line-height: 1.5;
 }
 
+/* Color para filas pares (efecto cebra) */
 tbody tr:nth-child(even) {
     background: #22474F;
 }
 
+/* Efecto visual al pasar el cursor sobre las filas */
 tbody tr:hover {
     background: #E8ABF7;
 }
 
+/* Quita el borde inferior a la última fila */
 tbody tr:last-child td, tbody tr:last-child th {
     border-bottom: none;
 }
 
+/* Columna lateral de categorías combinadas */
 .categoria {
     width: 160px;
     background: #4A90E2;
@@ -97,6 +116,7 @@ tbody tr:last-child td, tbody tr:last-child th {
     font-weight: 700;
 }
 
+/* Texto secundario dentro de la categoría */
 .categoria small {
     display: block;
     margin-top: 6px;
@@ -104,26 +124,31 @@ tbody tr:last-child td, tbody tr:last-child th {
     font-weight: 400;
 }
 
+/* Texto destacado para nombres de productos */
 .producto {
     font-weight: 700;
 }
 
+/* Alineación y espaciado para celdas numéricas */
 .numero {
     text-align: center;
     font-variant-numeric: tabular-nums;
 }
 
+/* Formato para valores monetarios alineados a la derecha */
 .dinero {
     text-align: right;
     white-space: nowrap;
     font-variant-numeric: tabular-nums;
 }
 
+/* Color y peso para la columna final de Total Ventas */
 .total-ventas {
     color: #5B144B;
     font-weight: 700;
 }
 
+/* Miniatura o imagen del producto */
 .imagen-producto {
     display: block;
     width: 64px;
@@ -135,17 +160,20 @@ tbody tr:last-child td, tbody tr:last-child th {
     border: 1px solid white;
 }
 
+/* Contenedor secundario para alineación de texto */
 .container {
     color: blue;
     text-align: right;
 }
 
+/* Texto de advertencia o instrucción al pie de la tabla */
 .nota {
     margin: 12px 0 24px;
     font-size: 13px;
     color: #2E0101;
 }
 
+/* Botón de enlace estilo píldora para volver al inicio */
 .enlace-home {
     display: inline-block;
     padding: 12px 18px;
@@ -156,20 +184,23 @@ tbody tr:last-child td, tbody tr:last-child th {
     font-weight: 700;
 }
 
+/* Cambio de color al pasar el cursor sobre el botón */
 .enlace-home:hover {
     background: violet;
 }
 
+/* Foco accesible y seguro para el botón */
 .enlace-home:focus-visible {
     outline: 3px solid yellow;
     outline-offset: 3px;
 }
 
+/* Ajustes adaptables para pantallas pequeñas móviles */
 @media (max-width: 600px) {
     body {
         padding: 24px 12px;
     }
     thead th, tbody td, tbody th {
-    padding: 12px 10px;
+        padding: 12px 10px;
     }
 }
