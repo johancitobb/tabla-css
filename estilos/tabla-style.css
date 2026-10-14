@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;  
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: white;
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    margin-bottom: 24px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: clamp(24px, 4vm, 34px);
+    color: #571010;
+}
+
+header p {
+    margin: 0;
+    color: #2E0101;
+    line-height: 1.5;
+}
+
+.tabla-contendor {
+    overflow-x: auto;
+    background: #4E7682;
+    border: 1px solid black;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgb(15 23 42 / 10%);
+}
+
+.tabla-contendor:focus-visible {
+    outline: 3px solid blue;
+    outline-offset: 4px;
+}
+
+table {
+    width: 100%;
+    min-width: 1100px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+caption {
+    padding: 18px 20px;
+    text-align: left;
+    font-weight: 700;
+    color: black;
+    background: #0092B5;
+}
+thead th {
+    padding: 16px 12px;
+    color: white;
+    background: #00CDFF;
+    border: 0px solid #E2E8F0;
+    text-align: center;
+    line-height: 1.4;
+}
+thead tr:nth-child(2) th {
+background: #3BDBFF;
+}
+
+tbody td, tbody th {
+    padding: 16px 12px;
+    border-bottom: 0px solid white;
+    text-align: left;
+    vertical-align: left;
+    line-height: 1.5;
+}
+
+tbody tr:nth-child(even) {
+    background: #22474F;
+}
+
+tbody tr:hover {
+    background: #E8ABF7;
+}
+
+tbody tr:last-child td, tbody tr:last-child th {
+    border-bottom: none;
+}
+
+.categoria {
+    width: 160px;
+    background: #4A90E2;
+    color: black;
+    font-weight: 700;
+}
+
+.categoria small {
+    display: block;
+    margin-top: 6px;
+    color: black;
+    font-weight: 400;
+}
+
+.producto {
+    font-weight: 700;
+}
+
+.numero {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+.dinero {
+    text-align: right;
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.total-ventas {
+    color: #5B144B;
+    font-weight: 700;
+}
+
+.imagen-producto {
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 4px;
+    object-fit: contain;
+    background: white;
+    border: 1px solid white;
+}
+
+.container {
+    color: blue;
+    text-align: right;
+}
+
+.nota {
+    margin: 12px 0 24px;
+    font-size: 13px;
+    color: #2E0101;
+}
+
+.enlace-home {
+    display: inline-block;
+    padding: 12px 18px;
+    color: white;
+    background: #00CDFF;
+    border-radius: 250px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enlace-home:hover {
+    background: violet;
+}
+
+.enlace-home:focus-visible {
+    outline: 3px solid yellow;
+    outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 24px 12px;
+    }
+    thead th, tbody td, tbody th {
+    padding: 12px 10px;
+    }
+}
